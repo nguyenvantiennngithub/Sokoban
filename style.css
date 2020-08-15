@@ -1,0 +1,60 @@
+table {
+    border-collapse: collapse;
+    display: inline-block;
+}
+table,
+th,
+td {
+    border: 1px solid #030303;
+    padding: 0;
+    border: none;
+}
+
+img{
+    display: block;
+}
+
+button{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.done{
+    height: 250px;
+    width: 500px;
+    transform: translateY(-110%);
+    border: 5px solid red;
+    background-color: green;
+    display: none;
+    /* opacity: 0; */
+    animation: fadeIn ease-in 2s;
+    z-index: 10;
+}
+
+.done-text{
+    font-size: 200%;
+    color: #FFF;
+    font-weight: 500;
+    margin: 0 auto;
+    line-height: 250px;
+    
+}
+
+.programer{
+    font-size: 32px;
+    font-weight: 600;
+    color: red;
+}
+
+@keyframes fadeIn{
+	from {
+        opacity: 0;
+        transform: scale(0);
+        transform: translateY(-110%);
+	}
+	to {
+        opacity: 1;
+        transform: scale(1);
+        transform: translateY(-110%);
+	}
+}
